@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:spotify_testclone/home/home.dart';
+import 'package:spotify_testclone1/home/home.dart';
 
 void main() {
   runApp(const MusicAppEntry());
