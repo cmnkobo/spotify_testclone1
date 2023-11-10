@@ -1,16 +1,8 @@
-# spotify_testclone1
+Hi, my name is Christian Nkobo Michael,
+I am a mobile application developer with Flutter 
+i embarked on this project of developing a spotify-like mobile application front page'.
+![WhatsApp Image 2023-11-09 at 07 45 37_c8405e47](https://github.com/cmnkobo/spotify_testclone1/assets/38749574/7c29f168-c68e-4fe0-aa36-7799098ae989)
 
-A new Flutter project.
+It gives me more insight on my coding and app development journey.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+i enjoy Flutter!
