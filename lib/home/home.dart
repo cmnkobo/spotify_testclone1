@@ -1,5 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:share_plus/share_plus.dart';
 
 class MusicHome extends StatefulWidget {
   const MusicHome({super.key});
@@ -46,51 +47,85 @@ class _MusicHomeState extends State<MusicHome> {
           children: [
             Padding(
               padding: const EdgeInsets.all(10.0),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(15.0),
-                      color: Colors.grey.withOpacity(0.4),
-                    ),
-                    height: 38,
-                    width: 80,
-                    child: const Center(
-                      child: Text(
-                        'Music',
-                        style: TextStyle(
-                          fontSize: 17.0,
-                          fontWeight: FontWeight.w500,
+              child: SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(15.0),
+                        color: Colors.grey.withOpacity(0.4),
+                      ),
+                      height: 38,
+                      width: 80,
+                      child: const Center(
+                        child: Text(
+                          'Music',
+                          style: TextStyle(
+                            fontSize: 17.0,
+                            fontWeight: FontWeight.w500,
+                          ),
                         ),
                       ),
                     ),
-                  ),
-                  const SizedBox(
-                    width: 10,
-                  ),
-                  Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(15.0),
-                      color: Colors.grey.withOpacity(0.4),
+                    const SizedBox(
+                      width: 10,
                     ),
-                    height: 38,
-                    width: 180,
-                    child: const Center(
-                      child: Text(
-                        'Podcasts & Shows',
-                        style: TextStyle(
-                          fontSize: 17.0,
-                          fontWeight: FontWeight.w500,
+                    Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(15.0),
+                        color: Colors.grey.withOpacity(0.4),
+                      ),
+                      height: 38,
+                      width: 180,
+                      child: const Center(
+                        child: Text(
+                          'Podcasts & Shows',
+                          style: TextStyle(
+                            fontSize: 17.0,
+                            fontWeight: FontWeight.w500,
+                          ),
                         ),
                       ),
                     ),
-                  ),
-                  const SizedBox(
-                    height: 12,
-                  )
-                ],
+                    const SizedBox(
+                      width: 10,
+                    ),
+                    InkWell(
+                      onTap: () async {
+                        //   print('You clicked share');
+                        Share.share('check out my website https://example.com');
+                      },
+                      child: Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(15.0),
+                          color: Colors.grey.withOpacity(0.4),
+                        ),
+                        height: 38,
+                        width: 90,
+                        child: const Padding(
+                          padding: EdgeInsets.all(8.0),
+                          child: Row(
+                            children: [
+                              Icon(
+                                Icons.share,
+                                size: 20,
+                              ),
+                              Text(
+                                'Share',
+                                style: TextStyle(
+                                    fontSize: 17.0,
+                                    fontWeight: FontWeight.w500),
+                              )
+                            ],
+                          ),
+                        ),
+                      ),
+                    )
+                  ],
+                ),
               ),
             ),
             const SizedBox(
@@ -483,6 +518,9 @@ class _MusicHomeState extends State<MusicHome> {
                     const SizedBox(
                       width: 10,
                     ),
+                    Container(
+                      decoration: BoxDecoration(),
+                    )
                   ],
                 ),
               ),
