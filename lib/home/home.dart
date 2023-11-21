@@ -473,6 +473,9 @@ class _MusicHomeState extends State<MusicHome> {
               ),
             ),
             Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(5),
+              ),
               child: SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
@@ -519,7 +522,9 @@ class _MusicHomeState extends State<MusicHome> {
                       width: 10,
                     ),
                     Container(
-                      decoration: BoxDecoration(),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(5),
+                      ),
                     )
                   ],
                 ),
